@@ -1,0 +1,65 @@
+﻿{
+    "generated_at":  "2026-06-16T22:35:52",
+    "scenario_count":  8,
+    "passed_count":  8,
+    "average_score":  25.2,
+    "overall_result":  "pass",
+    "results":  [
+                    {
+                        "scenario":  "01-knowledge-understanding-psychology.md",
+                        "category":  "knowledge_understanding",
+                        "score":  25,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/01-knowledge-understanding-psychology.transcript.md"
+                    },
+                    {
+                        "scenario":  "02-skill-training-english-speaking.md",
+                        "category":  "skill_training",
+                        "score":  26,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/02-skill-training-english-speaking.transcript.md"
+                    },
+                    {
+                        "scenario":  "03-project-delivery-personal-website.md",
+                        "category":  "project_delivery",
+                        "score":  26,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/03-project-delivery-personal-website.transcript.md"
+                    },
+                    {
+                        "scenario":  "04-exam-certification-ielts.md",
+                        "category":  "exam_certification",
+                        "score":  25,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/04-exam-certification-ielts.transcript.md"
+                    },
+                    {
+                        "scenario":  "05-creative-expression-short-video.md",
+                        "category":  "creative_expression",
+                        "score":  25,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/05-creative-expression-short-video.transcript.md"
+                    },
+                    {
+                        "scenario":  "06-career-growth-ai-product-manager.md",
+                        "category":  "career_growth",
+                        "score":  26,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/06-career-growth-ai-product-manager.transcript.md"
+                    },
+                    {
+                        "scenario":  "07-life-practice-fitness.md",
+                        "category":  "life_practice",
+                        "score":  24,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/07-life-practice-fitness.transcript.md"
+                    },
+                    {
+                        "scenario":  "08-research-exploration-industry.md",
+                        "category":  "research_exploration",
+                        "score":  25,
+                        "passed":  true,
+                        "transcript":  "tests/transcripts/08-research-exploration-industry.transcript.md"
+                    }
+                ]
+}

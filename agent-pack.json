@@ -1,0 +1,39 @@
+{
+  "name": "personalized-learning",
+  "displayName": "Personalized Learning",
+  "version": "0.1.0",
+  "description": "A platform-neutral Agent Pack for running a dynamic personalized learning loop across general-purpose AI agents.",
+  "method": "Loop Learning OS",
+  "entrypoints": {
+    "genericAgent": "AGENT.md",
+    "codexSkill": "skills/personalized-learning/SKILL.md"
+  },
+  "skillPath": "skills/personalized-learning",
+  "supports": [
+    "Codex",
+    "Claude",
+    "ChatGPT",
+    "Coze",
+    "Dify-style workflows",
+    "custom open-source model agents"
+  ],
+  "capabilities": [
+    "goal clarification",
+    "level assessment",
+    "gap diagnosis",
+    "learning map",
+    "path planning",
+    "resource curation",
+    "tutoring",
+    "review adjustment",
+    "learner state memory",
+    "visual render brief generation"
+  ],
+  "tests": {
+    "structural": "tests/validate-pack.ps1",
+    "transcriptHarness": "tests/test-transcript-harness.ps1",
+    "codexSkill": "skills/personalized-learning/scripts/validate-skill.ps1"
+  },
+  "license": "MIT"
+}
+
