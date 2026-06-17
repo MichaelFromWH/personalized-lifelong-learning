@@ -15,7 +15,7 @@ Pass threshold:
 
 | Key | Criterion | Good Standard |
 | --- | --- | --- |
-| goal_contract | Goal contract | Wish becomes concrete target with success evidence, time horizon, scope, constraints, and guidance style. |
+| goal_contract | Goal contract | Wish becomes concrete target with OKR breakdown, success evidence, time horizon, scope, constraints, and guidance style. |
 | current_position | Current position | Baseline level is evidence-backed and includes confidence. |
 | gap_diagnosis | Gap diagnosis | Gap between current state and target is actionable. |
 | learning_map | Learning map | Route has start, destination, milestones, dependencies, risks, and checkpoints. |
@@ -28,6 +28,7 @@ Pass threshold:
 Common failures:
 
 - Jumping to resources before clarifying the goal.
+- Skipping OKR breakdown after the goal is clear.
 - Treating self-rating as proven baseline.
 - Creating a generic plan that could fit anyone.
 - Making the learning map a topic list.

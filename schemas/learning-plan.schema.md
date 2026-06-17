@@ -12,6 +12,7 @@ learning_plan:
       graduation_condition: ""
   seven_day_plan:
     - day: 1
+      key_result: "KR1"
       focus: ""
       task: ""
       expected_evidence: ""
@@ -30,4 +31,3 @@ learning_plan:
   status: "active"
   updated_at: ""
 ```
-

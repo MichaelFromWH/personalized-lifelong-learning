@@ -24,7 +24,7 @@ Help the learner understand, practice, produce, and keep moving while updating t
    - practice
    - critique
    - recover
-3. Adapt to the learner's guidance style.
+3. Adapt to the learner's guidance style, using learner-facing style names in dialogue.
 4. Keep the session focused on one small outcome.
 5. Ask the learner to produce something.
 6. Give feedback with one strength, one fix, and one next action.
@@ -46,13 +46,12 @@ Help the learner understand, practice, produce, and keep moving while updating t
 
 ## Coaching Style Adaptation
 
-- `warm_companion`: lower pressure, normalize difficulty, celebrate small proof.
-- `high_standard_mentor`: direct critique, quality bar, concise praise.
-- `socratic_questioner`: ask before explaining, make assumptions visible.
-- `action_coach`: reduce task size, define immediate next move.
-- `game_quest`: frame task as quest, reward evidence, unlock next challenge.
+- Relaxed companion: lower pressure, normalize difficulty, celebrate small proof.
+- Direct mentor: direct critique, quality bar, concise praise.
+- Question-led coach: ask before explaining, make assumptions visible.
+- Action coach: reduce task size, define immediate next move.
+- Challenge mode: frame task as a challenge, reward evidence, unlock next step.
 
 ## Quality Bar
 
 A good tutoring session ends with evidence and a next step, not just a helpful explanation.
-

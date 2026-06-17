@@ -57,14 +57,14 @@ if (Test-Path -LiteralPath $transcriptDir -PathType Container) {
     $relativePath = "tests/transcripts/$($transcript.Name)"
     Assert-FileContains $relativePath @(
       "## Simulated Dialogue",
-      "Flow Guard",
-      "Learning Stage",
-      "Stage Transition",
-      "Missing Artifacts",
-      "Current Required Stage",
-      "Goal Contract",
+      "Process Preview",
+      "Stage Purpose",
+      "Learning Goal",
+      "OKR Breakdown",
+      "Key Results",
+      "Executable Actions",
       "Current Position",
-      "Gap Diagnosis",
+      "Gap To Target",
       "Learning Map",
       "7-Day Plan",
       "Tutoring Session",
@@ -72,6 +72,28 @@ if (Test-Path -LiteralPath $transcriptDir -PathType Container) {
       "Learner State Update",
       "Score:"
     )
+
+    $content = Get-Content -LiteralPath $transcript.FullName -Raw -Encoding UTF8
+    $disallowedUserFacingTerms = @(
+      "Flow Guard",
+      "Learning Stage",
+      "Stage Transition",
+      "Current Required Stage",
+      "Next Allowed Stage",
+      "learning_stage",
+      "stage_transition",
+      "action_coach",
+      "high_standard_mentor",
+      "warm_companion",
+      "socratic_questioner",
+      "game_quest"
+    )
+
+    foreach ($term in $disallowedUserFacingTerms) {
+      if ($content -match [regex]::Escape($term)) {
+        Add-Failure "Transcript $relativePath exposes internal term: $term"
+      }
+    }
   }
 }
 

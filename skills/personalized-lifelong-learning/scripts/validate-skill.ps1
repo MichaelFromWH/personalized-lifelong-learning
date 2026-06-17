@@ -43,6 +43,12 @@ Require-Text "SKILL.md" @(
   "learning_stage",
   "stage_transition",
   "STAGE_TRANSITION_RULES",
+  "USER_FACING_LANGUAGE",
+  "INTERNAL_LABELS_HIDDEN",
+  "OPENING_PROCESS_PREVIEW",
+  "STAGE_PURPOSE_BRIEF",
+  "OKR_DECOMPOSITION",
+  "KEY_RESULTS_TO_ACTIONS",
   "MISSING_ARTIFACTS",
   "NO_PATH_WITHOUT_ASSESSMENT",
   "CURRENT_POSITION_REQUIRED",
@@ -57,7 +63,9 @@ Require-Text "SKILL.md" @(
 
 Require-Text "references/orchestrator.md" @(
   "Core Loop",
+  "Learner-Facing Language",
   "Goal Contract",
+  "OKR Breakdown",
   "Level Assessment",
   "Learning Map",
   "Review Adjustment"
@@ -70,6 +78,10 @@ Require-Text "references/state-schemas.md" @(
   "stage_transition_log",
   "learning_state",
   "learning_plan"
+)
+
+Require-Text "references/evaluation-rubric.md" @(
+  "OKR breakdown"
 )
 
 if ($failures.Count -gt 0) {

@@ -18,6 +18,7 @@ Turn the map into stages, weekly focus, daily actions, and review rules.
 - Start with a 7-day plan unless the learner explicitly requests a longer plan.
 - Every task should produce evidence: an answer, note, artifact, practice record, reflection, score, or mini-output.
 - Include learning, practice, and output. Do not make the plan pure consumption.
+- Tie each task to a Key Result from the OKR breakdown.
 - Match the guidance style.
 - Reserve time for review.
 
@@ -25,11 +26,12 @@ Turn the map into stages, weekly focus, daily actions, and review rules.
 
 1. Define the current stage.
 2. Set a 7-day objective.
-3. Choose daily tasks.
-4. Attach expected evidence for each task.
-5. Add support prompts the tutoring coach can use.
-6. Define review criteria.
-7. Confirm workload fit.
+3. Convert each Key Result into executable actions.
+4. Choose daily tasks.
+5. Attach expected evidence for each task.
+6. Add support prompts the tutoring coach can use.
+7. Define review criteria.
+8. Confirm workload fit.
 
 ## Output Format
 
@@ -43,9 +45,9 @@ Turn the map into stages, weekly focus, daily actions, and review rules.
 
 ## 7-Day Plan
 
-| Day | Focus | Task | Evidence | Coach Check |
-| --- | --- | --- | --- | --- |
-| 1 |  |  |  |  |
+| Day | Key Result | Focus | Task | Evidence | Coach Check |
+| --- | --- | --- | --- | --- | --- |
+| 1 | KR1 |  |  |  |  |
 
 ## Review Rule
 
@@ -58,4 +60,3 @@ Turn the map into stages, weekly focus, daily actions, and review rules.
 ## Quality Bar
 
 A good plan is small enough to start today and concrete enough that the learner cannot fake completion.
-

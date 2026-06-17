@@ -40,6 +40,14 @@ goal_contract:
   category_secondary: ""
   original_wish: ""
   clarified_goal: ""
+  okr:
+    objective: ""
+    key_results:
+      - kr_id: "KR1"
+        description: ""
+        target_cycle: "7 days"
+        success_signal: ""
+        evidence: []
   target_level: ""
   success_evidence: []
   time_horizon:
@@ -109,6 +117,7 @@ learning_plan:
       graduation_condition: ""
   seven_day_plan:
     - day: 1
+      key_result: "KR1"
       focus: ""
       task: ""
       expected_evidence: ""

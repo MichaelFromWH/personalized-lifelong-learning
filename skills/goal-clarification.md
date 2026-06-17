@@ -26,13 +26,14 @@ Turn a learning wish into a goal contract the learner can actually navigate towa
 2. Classify the goal category and mention the classification only if useful.
 3. If the target is vague, offer 3 to 5 concrete target levels.
 4. Ask one question at a time until the destination is concrete.
-5. Help the learner choose a guidance style:
-   - `warm_companion`
-   - `high_standard_mentor`
-   - `socratic_questioner`
-   - `action_coach`
-   - `game_quest`
+5. Help the learner choose a guidance style in learner-facing language:
+   - Relaxed companion
+   - Direct mentor
+   - Question-led coach
+   - Action coach
+   - Challenge mode
 6. Convert the result into a goal contract.
+7. Break the clarified goal into an OKR: one Objective, 2 to 4 Key Results, and evidence for each Key Result.
 
 ## Target Level Ladder
 
@@ -53,6 +54,8 @@ When a domain lacks a formal rating system, use this generic ladder:
 
 - Goal category:
 - Learning goal:
+- Objective:
+- Key Results:
 - Target level:
 - Success evidence:
 - Time horizon:
@@ -69,9 +72,9 @@ A good goal contract answers:
 
 - What exactly is the learner trying to do?
 - What counts as success?
+- Which Key Results prove the goal is moving?
 - What time and energy can they realistically invest?
 - What type of evidence will prove progress?
 - How should the agent guide them?
 
 If these are not clear, keep clarifying before planning.
-

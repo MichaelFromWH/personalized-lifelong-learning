@@ -19,7 +19,7 @@ Pass threshold:
 
 | Key | Criterion | What Good Looks Like |
 | --- | --- | --- |
-| goal_contract | Goal contract | The learner's wish is converted into a concrete target with success evidence, time horizon, scope, constraints, and guidance style. |
+| goal_contract | Goal contract | The learner's wish is converted into a concrete target with OKR breakdown, success evidence, time horizon, scope, constraints, and guidance style. |
 | current_position | Current position | The agent identifies baseline level using appropriate evidence and states confidence. |
 | gap_diagnosis | Gap diagnosis | The agent explains the gap between current state and target in actionable terms. |
 | learning_map | Learning map | The route contains start, destination, milestones, dependencies, risks, and checkpoints. |
@@ -32,6 +32,7 @@ Pass threshold:
 ## Common Failure Signals
 
 - The agent jumps to resources before clarifying the goal.
+- The agent skips OKR breakdown after the goal is clear.
 - The plan is generic and could fit any learner.
 - The agent treats self-rating as proven baseline.
 - The learning map is just a topic list.
@@ -39,4 +40,3 @@ Pass threshold:
 - There is no review rule.
 - The learner's guidance style is ignored.
 - The agent overclaims expertise in high-stakes domains.
-

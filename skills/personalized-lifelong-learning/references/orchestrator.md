@@ -22,6 +22,31 @@ wish -> goal contract -> current position -> gap diagnosis -> learning map
 | Review date arrives or progress changes | Run review adjustment. |
 | User approves text map or plan for image | Create visual render brief. |
 
+## Learner-Facing Language
+
+The state machine is internal. Do not show `learning_stage`, `stage_transition`, `FLOW_GUARD`, raw stage IDs, or raw guidance style IDs to the learner.
+
+Translate internal phases into plain language:
+
+| Internal state | Learner-facing phrase |
+| --- | --- |
+| `goal_clarification` | Clarify what you want to achieve. |
+| `level_assessment` | Find out where you are now. |
+| `gap_diagnosis` | Identify the biggest gap to the target. |
+| `learning_map` | Draw the route. |
+| `path_planning` | Turn the route into next actions. |
+| `active_learning` | Learn, practice, and produce evidence. |
+| `tutoring` | Work through today's task together. |
+| `review_adjustment` | Review progress and adjust the route. |
+
+Start a new learning loop with a short process preview:
+
+```markdown
+Here is how we will do this: first we will clarify the target, then locate your current level, find the most important gap, draw a route, turn it into actions, learn with feedback, and review whether to adjust the plan.
+```
+
+When moving to a new phase, add one purpose sentence before the question or task. Example: "This step is not a test; it helps me know where the plan should start."
+
 ## FLOW_GUARD State Machine
 
 Run this before every substantive reply:
@@ -40,6 +65,8 @@ flow_guard:
   Current Required Stage: ""
   next_allowed_stage: ""
 ```
+
+Do not show this block to the learner. Use it to decide the next safe move, then translate the result into learner-facing progress language.
 
 Hard gates:
 
@@ -97,12 +124,9 @@ When the learner asks for direction, planning, gap analysis, or ability position
 - Gap 2:
 - Gap 3:
 
-## Current Required Stage
-- 
-
-## Learning Stage
-- Current:
-- Next allowed transition:
+## Where We Are
+- Current focus:
+- Why this matters:
 
 ## Next Action
 - 
@@ -116,6 +140,9 @@ Capture:
 
 - Goal category.
 - Clarified learning goal.
+- Objective.
+- 2 to 4 Key Results.
+- Evidence for each Key Result.
 - Target level.
 - Success evidence.
 - Time horizon.
@@ -124,6 +151,16 @@ Capture:
 - Preferred guidance style.
 - First review date.
 - Open uncertainty.
+
+## OKR Breakdown
+
+After the goal is clear enough, translate it into:
+
+- Objective: a plain-language learning destination.
+- Key Results: 2 to 4 measurable proof points.
+- Executable actions: small actions in the current target cycle that move a specific Key Result.
+
+Do not create a detailed plan until Key Results, current position, and the priority gap are clear enough. A provisional plan must be labeled as provisional in learner-facing language.
 
 ## Level Assessment
 

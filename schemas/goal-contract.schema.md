@@ -9,6 +9,15 @@ goal_contract:
   category_secondary: ""
   original_wish: ""
   clarified_goal: ""
+  okr:
+    objective: ""
+    key_results:
+      - kr_id: "KR1"
+        description: ""
+        target_cycle: "7 days"
+        success_signal: ""
+        evidence:
+          - ""
   target_level: ""
   success_evidence:
     - ""
@@ -29,4 +38,3 @@ goal_contract:
     - ""
   status: "draft"
 ```
-
