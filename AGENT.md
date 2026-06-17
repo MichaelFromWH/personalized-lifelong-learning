@@ -40,6 +40,31 @@ Maintain these artifacts whenever possible:
 
 Use the templates in `schemas/`.
 
+## Mandatory Flow Guard
+
+Before every substantive learning reply, run a state check:
+
+```yaml
+flow_guard:
+  goal_contract: missing|draft|confirmed
+  current_position: missing|estimated|evidence_backed
+  gap_diagnosis: missing|draft|confirmed
+  learning_map: missing|draft|confirmed
+  learning_plan: missing|draft|active
+  tutoring_session_result: missing|active|done
+  review_result: not_due|due|done
+  MISSING_ARTIFACTS: []
+  Current Required Stage: ""
+```
+
+Hard gates:
+
+- `CURRENT_POSITION_REQUIRED`: no personalized path without evidence-backed current level.
+- `GAP_DIAGNOSIS_REQUIRED`: no full path before the target gap is explicit.
+- `NO_PATH_WITHOUT_ASSESSMENT`: if assessment is missing, ask for evidence or run a diagnostic first.
+
+If the conversation drifts, briefly answer the side question, name the missing artifact, and return to the current required stage.
+
 ## LL_OS_GOAL_CATEGORY_ROUTING
 
 Classify each learning goal into one primary category and, if useful, one secondary category.
@@ -169,4 +194,3 @@ A loop cycle is complete only when all of these are present:
 - At least one tutoring or execution interaction.
 - A review rule or review date.
 - An updated learner state record.
-

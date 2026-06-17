@@ -131,6 +131,11 @@ Assert-FileExists "skills/personalized-lifelong-learning/scripts/validate-skill.
 Assert-Contains "skills/personalized-lifelong-learning/SKILL.md" @(
   "personalized-lifelong-learning",
   "Loop Learning OS",
+  "FLOW_GUARD",
+  "MISSING_ARTIFACTS",
+  "NO_PATH_WITHOUT_ASSESSMENT",
+  "CURRENT_POSITION_REQUIRED",
+  "GAP_DIAGNOSIS_REQUIRED",
   "goal contract",
   "level assessment",
   "learning map",

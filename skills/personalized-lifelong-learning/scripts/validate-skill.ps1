@@ -39,6 +39,11 @@ Require-File "references/evaluation-rubric.md"
 Require-Text "SKILL.md" @(
   "name: personalized-lifelong-learning",
   "Loop Learning OS",
+  "FLOW_GUARD",
+  "MISSING_ARTIFACTS",
+  "NO_PATH_WITHOUT_ASSESSMENT",
+  "CURRENT_POSITION_REQUIRED",
+  "GAP_DIAGNOSIS_REQUIRED",
   "goal contract",
   "level assessment",
   "learning map",

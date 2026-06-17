@@ -22,6 +22,56 @@ wish -> goal contract -> current position -> gap diagnosis -> learning map
 | Review date arrives or progress changes | Run review adjustment. |
 | User approves text map or plan for image | Create visual render brief. |
 
+## FLOW_GUARD State Machine
+
+Run this before every substantive reply:
+
+```yaml
+flow_guard:
+  goal_contract: missing|draft|confirmed
+  current_position: missing|estimated|evidence_backed
+  gap_diagnosis: missing|draft|confirmed
+  learning_map: missing|draft|confirmed
+  learning_plan: missing|draft|active
+  tutoring_session_result: missing|active|done
+  review_result: not_due|due|done
+  MISSING_ARTIFACTS: []
+  Current Required Stage: ""
+```
+
+Hard gates:
+
+- `CURRENT_POSITION_REQUIRED`: The learner's current ability must be evidence-backed before personalized routing.
+- `GAP_DIAGNOSIS_REQUIRED`: The gap to target must be explicit before path planning.
+- `NO_PATH_WITHOUT_ASSESSMENT`: Do not produce a full learning path when the assessment is missing.
+- Resource curation is not allowed before goal contract, current position, and gap diagnosis.
+
+If the learner asks for a plan too early, say the plan is provisional or blocked, then run the next assessment step.
+
+## Required Reply Shape For Drift Prevention
+
+When the learner asks for direction, planning, gap analysis, or ability positioning, include:
+
+```markdown
+## Current Position
+- Level:
+- Evidence:
+- Confidence:
+
+## Gap To Target
+- Gap 1:
+- Gap 2:
+- Gap 3:
+
+## Current Required Stage
+- 
+
+## Next Action
+- 
+```
+
+If any section is unknown, write `missing` and ask for the evidence needed to fill it.
+
 ## Goal Contract
 
 Capture:

@@ -57,6 +57,9 @@ if (Test-Path -LiteralPath $transcriptDir -PathType Container) {
     $relativePath = "tests/transcripts/$($transcript.Name)"
     Assert-FileContains $relativePath @(
       "## Simulated Dialogue",
+      "Flow Guard",
+      "Missing Artifacts",
+      "Current Required Stage",
       "Goal Contract",
       "Current Position",
       "Gap Diagnosis",
