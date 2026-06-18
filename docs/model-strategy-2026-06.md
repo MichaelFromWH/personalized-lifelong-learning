@@ -35,15 +35,17 @@ Use a strong Chinese-capable, agentic model as the main planner and coach.
 Recommended candidates:
 
 - `Qwen3 / Qwen3.5 / Qwen3.6 family`: strong Chinese, multilingual, tool-use ecosystem, and broad deployment support.
-- `GLM-4.7-Flash` or `GLM-5`: strong Chinese agent model candidates from Z.ai. GLM-5 is positioned for complex systems engineering and long-horizon agentic tasks, but is large.
+- `GLM-5.2`: strong current evaluation candidate from Z.ai for long-horizon coding and agentic workflows. Official Hugging Face materials describe 1M context, MIT open-source licensing, public weights, and local serving support through frameworks such as Transformers, vLLM, SGLang, xLLM, and ktransformers.
+- `DeepSeek-V4 Preview`: strong current evaluation candidate from DeepSeek, with official API release notes and public Hugging Face model cards for Pro / Flash variants. Its 1M context makes it relevant for long goal histories and review synthesis.
 - `MiniMax-M3`: attractive if the product needs native multimodal goal-support sessions and long context. Very new, so validate deployment maturity before betting the product on it.
 - `Kimi K2.6 / Kimi K2.7 Code`: strong for long-horizon agentic workflows and coding-heavy goal paths; less obviously the default for broad everyday goals.
 - `DeepSeek-V3.2`: strong reasoning and agent performance, but large deployment footprint.
 
 Practical recommendation:
 
-- Start with `Qwen` as the default self-host/open stack because it is broad, stable, Chinese-friendly, and easier to deploy.
-- Keep `GLM` and `MiniMax-M3` as evaluation tracks.
+- Start with `Qwen` as the stable open-stack baseline because it is broad, Chinese-friendly, and easier to deploy.
+- Add `GLM-5.2` and `DeepSeek-V4 Preview` as live evaluation tracks before declaring a default.
+- Keep `MiniMax-M3` as a multimodal / long-context evaluation track.
 - Use hosted APIs during early product validation; move to self-hosting only after usage patterns are clear.
 
 ### 2. Multimodal Understanding
@@ -125,6 +127,10 @@ Client Web/App
 
 ## Source Links
 
+- GLM-5.2 Hugging Face blog: https://huggingface.co/blog/zai-org/glm-52-blog
+- GLM-5.2 FP8 Hugging Face: https://huggingface.co/zai-org/GLM-5.2-FP8
+- DeepSeek V4 Preview release: https://api-docs.deepseek.com/news/news260424
+- DeepSeek-V4-Pro Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - GLM-4.5 GitHub: https://github.com/zai-org/GLM-4.5
 - GLM-5 Hugging Face: https://huggingface.co/zai-org/GLM-5
 - Z.ai Hugging Face organization: https://huggingface.co/zai-org

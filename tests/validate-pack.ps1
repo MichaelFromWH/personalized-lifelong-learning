@@ -39,6 +39,7 @@ $requiredFiles = @(
   "agent-pack.json",
   "AGENT.md",
   "docs/product-forms-and-integration-strategy.md",
+  "docs/standalone-web-app-goal-plan-2026-06.md",
   "docs/superpowers/specs/2026-06-16-life-vision-board-agent-pack-design.md",
   "docs/superpowers/plans/2026-06-16-life-vision-board-agent-pack.md",
   "skills/goal-clarification.md",
@@ -138,6 +139,18 @@ Assert-Contains "docs/product-forms-and-integration-strategy.md" @(
   "Codex",
   "Claude Code",
   "Coze"
+)
+
+Assert-Contains "docs/standalone-web-app-goal-plan-2026-06.md" @(
+  "Standalone Web/App Goal Plan",
+  "Goal Contract Draft",
+  "Current Stage",
+  "Target Milestone Route",
+  "First 7-Day Stage Plan",
+  "GLM-5.2",
+  "DeepSeek-V4",
+  "LangGraph",
+  "Life Portfolio Dashboard"
 )
 
 Assert-Contains "INSTALL.md" @(

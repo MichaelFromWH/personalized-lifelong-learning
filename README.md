@@ -34,6 +34,8 @@ Life Vision Board has two product forms that share the same OS:
 
 The shared kernel is the orchestrator, phase skills, schemas, rubrics, and future adapter layer. See [docs/product-forms-and-integration-strategy.md](docs/product-forms-and-integration-strategy.md).
 
+The standalone Web/App execution plan is tracked in [docs/standalone-web-app-goal-plan-2026-06.md](docs/standalone-web-app-goal-plan-2026-06.md).
+
 ## Project Structure
 
 ```text
