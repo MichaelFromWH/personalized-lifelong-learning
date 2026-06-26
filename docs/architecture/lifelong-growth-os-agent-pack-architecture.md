@@ -11,7 +11,11 @@ The GitHub repository should contain only reusable product and agent assets:
 - `skills/life-vision-board/`: Codex-installable skill package. The folder name stays stable for compatibility even though the public product name is `终身成长OS / Lifelong Growth OS`.
 - `schemas/`: portable state templates for growth profiles, goal portfolios, and growth logs.
 - `tests/`: deterministic validation, scenario coverage, and transcript harness outputs.
-- `docs/`: public architecture, model strategy, contribution rules, and implementation notes.
+- `docs/`: public architecture, Agent platform Skill strategy, contribution rules, and implementation notes.
+
+## Current Scope
+
+The current delivery mode is an Agent platform plugin / Skill / Agent Pack. This repository should not assume a standalone Web/App product, self-hosted model stack, proprietary model integration layer, or custom agent runtime at this stage.
 
 ## Private User Data Boundary
 
@@ -34,7 +38,7 @@ data/users/<user-id>/
 
 ## Runtime Loop
 
-The generic agent runtime follows this loop:
+The host Agent platform session follows this loop:
 
 ```text
 intake

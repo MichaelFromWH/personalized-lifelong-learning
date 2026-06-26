@@ -32,7 +32,7 @@ Because this version is a Markdown Agent Pack rather than a running app, the tes
 
 - All scenarios meet the pass threshold of 22/27.
 - No critical criterion scored 0.
-- Lowest scenarios: life practice and identity growth, because safety, emotion, and support context require careful boundaries in a future app.
+- Lowest scenarios: life practice and identity growth, because safety, emotion, and support context require careful boundaries in host Agent platforms.
 - Strongest scenarios: skill training, project delivery, and career growth, because their success evidence is naturally output-based.
 
 ## Findings
@@ -47,7 +47,7 @@ Fix applied: `skills/visual-rendering.md` includes explicit markers `TEXT_FIRST`
 
 Risk: "Any vision" can become vague if every goal is handled the same way.
 
-Fix applied: `AGENT.md` includes `CURRENT_POSITION_ROUTING` and ten scenario files covering goal categories from skill training to strategy decision and identity growth.
+Fix applied: `AGENT.md` includes `CURRENT_POSITION_ROUTING` and scenario files covering goal categories from skill training to strategy decision and identity growth.
 
 ### Finding 3: Current position must not collapse into current level
 
@@ -59,7 +59,7 @@ Fix applied: `skills/current-stage-assessment.md` and `skills/life-vision-board/
 
 Risk: A structural test can pass even if a future agent gives weak answers.
 
-Fix applied: `tests/evaluation-rubric.md` defines scenario-level scoring, failure signals, and critical artifacts. Future iterations should add transcript-based evaluations using real model calls.
+Fix applied: `tests/evaluation-rubric.md` defines scenario-level scoring, failure signals, and critical artifacts. Future iterations should add host-platform transcript evaluations when a target platform is selected.
 
 ### Finding 5: Scenario tests need replayable dialogue artifacts
 
@@ -69,10 +69,10 @@ Fix applied: `tests/run-transcript-harness.ps1` generates one deterministic simu
 
 ## Residual Risks
 
-- No live LLM transcript harness yet.
+- No live host-platform transcript harness yet.
 - Resource curation quality depends on the host agent's browsing or retrieval tools.
-- Image generation quality still needs real visual QA once integrated with an image model.
-- The state schemas are Markdown/YAML templates; a future app will need stricter JSON schemas and persistence logic.
+- Image generation quality still needs real visual QA inside host Agent platforms that provide image tools.
+- The state schemas are Markdown/YAML templates; future platform packages may need stricter JSON examples or platform-specific storage guidance.
 
 ## Final Verification
 
@@ -88,7 +88,7 @@ Expected result:
 
 ```text
 VALIDATION PASSED
-Transcript harness generated 10 transcripts. Overall result: PASS
+Transcript harness generated 12 transcripts. Overall result: PASS
 TRANSCRIPT HARNESS TEST PASSED
 LIFE VISION BOARD SKILL VALIDATION PASSED
 ```

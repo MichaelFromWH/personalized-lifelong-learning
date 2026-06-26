@@ -7,7 +7,7 @@ Use this skill whenever a key Life Vision Board artifact needs a scene-fit visua
 - TEXT_FIRST
 - SAME_REPLY_VISUAL_REQUIRED
 - HANDOFF_AFTER_VISUAL
-- GPT-image-2
+- HOST_IMAGE_TOOL
 - MODERN_AESTHETIC
 - CLEAR_STRUCTURE
 
@@ -19,7 +19,7 @@ Turn milestone routes, stage plans, review summaries, and goal contract posters 
 
 - A milestone route, stage plan, review result, current-position map, or goal contract poster is delivered.
 - The user would benefit from a milestone route image, stage-plan card, review dashboard, or goal contract poster.
-- The environment has access to GPT-image-2 or an equivalent image-generation model.
+- The host Agent platform has access to an image-generation tool or equivalent visual rendering capability.
 
 ## Hard Rules
 
@@ -67,7 +67,7 @@ Style requirements:
 Output language: Chinese unless the user requests another language.
 ```
 
-## Output Format Before Calling Image Model
+## Output Format Before Calling A Host Image Tool
 
 ```markdown
 ## Visual Render Brief

@@ -274,7 +274,7 @@ foreach ($scenario in $scenarioFiles) {
   $baseName = [System.IO.Path]::GetFileNameWithoutExtension($scenario.Name)
   $transcriptName = "$baseName.transcript.md"
   $transcriptPath = Join-Path $outputDir $transcriptName
-  $transcriptContent = New-TranscriptContent $scenario.Name $category $initialInput $acceptanceFocus $failureSignals $score
+  $transcriptContent = (New-TranscriptContent $scenario.Name $category $initialInput $acceptanceFocus $failureSignals $score).TrimEnd()
   Set-Content -LiteralPath $transcriptPath -Value $transcriptContent -Encoding UTF8
 
   $results += [pscustomobject]@{
@@ -329,11 +329,11 @@ $($rows -join "`n")
 
 ## Interpretation
 
-This harness creates deterministic gold-standard transcripts for the goal categories. It verifies that each scenario can travel through the full Lifelong Growth OS OS path: goal contract, current stage, distance to target, milestone route, 7-day stage plan, coaching session, review adjustment, and user state update.
+This harness creates deterministic gold-standard transcripts for the goal categories. It verifies that each scenario can travel through the full Lifelong Growth OS path: goal contract, current stage, distance to target, milestone route, 7-day stage plan, coaching session, review adjustment, and user state update.
 
 ## Next Upgrade
 
-Replace the deterministic transcript generator with provider adapters for real model calls while keeping the same manifest and scoring shape.
+Use the same scenarios for host-platform review sessions when a target Agent platform needs manual or automated acceptance testing.
 
 "@
 

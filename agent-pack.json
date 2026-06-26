@@ -10,36 +10,29 @@
     "codexSkill": "skills/life-vision-board/SKILL.md"
   },
   "skillPath": "skills/life-vision-board",
-  "productForms": {
-    "agentPlatformPlugin": {
-      "description": "Package Life Vision Board OS into third-party agent platforms.",
-      "targets": [
-        "Codex",
-        "Claude Code",
-        "Coze",
-        "Dify-style workflows",
-        "custom open-source agent runtimes"
-      ]
-    },
-    "standaloneProduct": {
-      "description": "Use the same OS inside a persistent Web/App Life Portfolio Dashboard.",
-      "coreSurfaces": [
-        "Life Portfolio Dashboard",
-        "Goal detail page",
-        "Daily or weekly focus view",
-        "Review dashboard",
-        "Visual board"
-      ]
-    }
+  "deliveryMode": {
+    "primary": "agentPlatformSkill",
+    "description": "Package Lifelong Growth OS into existing Agent platforms as a Skill, project instruction pack, workflow bot, or reusable Agent Pack.",
+    "targets": [
+      "Codex",
+      "Claude Code",
+      "Coze",
+      "Dify-style workflows",
+      "ChatGPT Projects or GPT instructions"
+    ],
+    "nonGoalsThisStage": [
+      "standalone Web/App product",
+      "self-hosted model stack",
+      "proprietary model integration layer",
+      "custom agent runtime"
+    ]
   },
   "supports": [
     "Codex",
     "Claude Code",
-    "Claude",
-    "ChatGPT",
     "Coze",
     "Dify-style workflows",
-    "custom open-source model agents"
+    "ChatGPT Projects or GPT instructions"
   ],
   "capabilities": [
     "vision clarification",

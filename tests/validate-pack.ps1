@@ -38,10 +38,7 @@ $requiredFiles = @(
   "CONTRIBUTING.md",
   "agent-pack.json",
   "AGENT.md",
-  "docs/product-forms-and-integration-strategy.md",
-  "docs/standalone-web-app-goal-plan-2026-06.md",
-  "docs/assets/standalone-web-app-goal-plan-cn.svg",
-  "docs/assets/standalone-web-app-goal-plan-cn.png",
+  "docs/agent-platform-skill-strategy.md",
   "docs/superpowers/specs/2026-06-16-life-vision-board-agent-pack-design.md",
   "docs/superpowers/plans/2026-06-16-life-vision-board-agent-pack.md",
   "skills/goal-clarification.md",
@@ -104,7 +101,7 @@ Assert-Contains "skills/visual-rendering.md" @(
   "TEXT_FIRST",
   "SAME_REPLY_VISUAL_REQUIRED",
   "HANDOFF_AFTER_VISUAL",
-  "GPT-image-2",
+  "HOST_IMAGE_TOOL",
   "MODERN_AESTHETIC",
   "CLEAR_STRUCTURE"
 )
@@ -128,38 +125,24 @@ Assert-Contains "README.md" @(
   "Lifelong Growth OS",
   "life-vision-board",
   "current position, not always ask for a current level",
-  "Product Forms",
-  "Life Portfolio Dashboard",
+  "Current Delivery Mode",
+  "Agent platform plugin / Skill / Agent Pack",
   "GitHub",
   "Codex",
   "Claude Code",
-  "Claude",
-  "ChatGPT",
   "Coze"
 )
 
-Assert-Contains "docs/product-forms-and-integration-strategy.md" @(
-  "Product Forms And Integration Strategy",
-  "Shared Kernel",
-  "Agent Platform Plugin",
-  "Standalone Web/App Product",
-  "Adapter Boundary",
-  "Life Portfolio Dashboard",
+Assert-Contains "docs/agent-platform-skill-strategy.md" @(
+  "Agent Platform Skill Strategy",
+  "Agent platform plugin / Skill / Agent Pack",
+  "Explicit Non-Goals For This Stage",
+  "standalone Web/App product",
+  "self-hosted model stack",
+  "custom agent runtime",
   "Codex",
   "Claude Code",
   "Coze"
-)
-
-Assert-Contains "docs/standalone-web-app-goal-plan-2026-06.md" @(
-  "Standalone Web/App Goal Plan",
-  "Goal Contract Draft",
-  "Current Stage",
-  "Target Milestone Route",
-  "First 7-Day Stage Plan",
-  "GLM-5.2",
-  "DeepSeek-V4",
-  "LangGraph",
-  "Life Portfolio Dashboard"
 )
 
 Assert-Contains "INSTALL.md" @(
@@ -172,9 +155,8 @@ Assert-Contains "INSTALL.md" @(
 Assert-Contains "agent-pack.json" @(
   '"name": "life-vision-board"',
   '"productName": "Lifelong Growth OS"',
-  '"productForms"',
-  '"agentPlatformPlugin"',
-  '"standaloneProduct"',
+  '"deliveryMode"',
+  '"agentPlatformSkill"',
   '"codexSkill"',
   '"genericAgent"'
 )

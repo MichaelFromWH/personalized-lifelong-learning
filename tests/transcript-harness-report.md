@@ -1,6 +1,6 @@
 ﻿# Transcript Harness Report
 
-Generated at: 2026-06-26T11:41:42
+Generated at: 2026-06-26T21:17:19
 
 Overall result: PASS
 
@@ -27,9 +27,9 @@ Average score: 25/27
 
 ## Interpretation
 
-This harness creates deterministic gold-standard transcripts for the goal categories. It verifies that each scenario can travel through the full Lifelong Growth OS OS path: goal contract, current stage, distance to target, milestone route, 7-day stage plan, coaching session, review adjustment, and user state update.
+This harness creates deterministic gold-standard transcripts for the goal categories. It verifies that each scenario can travel through the full Lifelong Growth OS path: goal contract, current stage, distance to target, milestone route, 7-day stage plan, coaching session, review adjustment, and user state update.
 
 ## Next Upgrade
 
-Replace the deterministic transcript generator with provider adapters for real model calls while keeping the same manifest and scoring shape.
+Use the same scenarios for host-platform review sessions when a target Agent platform needs manual or automated acceptance testing.
 

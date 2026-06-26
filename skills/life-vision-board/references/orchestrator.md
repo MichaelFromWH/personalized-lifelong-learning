@@ -1,6 +1,6 @@
 ﻿# Lifelong Growth OS Orchestrator Reference
 
-Use this reference when running the full Lifelong Growth OS OS workflow.
+Use this reference when running the full Lifelong Growth OS workflow.
 
 ## Core Loop
 

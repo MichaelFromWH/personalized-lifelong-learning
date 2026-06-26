@@ -139,4 +139,3 @@ User State Update:
 ## Harness Score
 
 Score: 24/27
-

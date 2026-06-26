@@ -1,12 +1,12 @@
-﻿# Lifelong Growth OS OS Agent Pack Design
+﻿# Lifelong Growth OS Agent Pack Design
 
 ## Background
 
-The product direction is a general-purpose Lifelong Growth OS OS that can run inside existing agent environments before becoming a standalone Web/App product. The first artifact should be a platform-neutral Markdown Agent Pack rather than a full application.
+The product direction is a general-purpose Lifelong Growth OS that runs first inside existing Agent platforms as a Skill / Agent Pack. The first artifact should be a platform-neutral Markdown Agent Pack rather than a full application or custom runtime.
 
 ## Target User
 
-The pack serves users with varied goals: conceptual understanding, skill improvement, project delivery, exam preparation, creative expression, career growth, life practice, research exploration, strategy decisions, and identity growth. The immediate user of this repository is an agent builder who wants to install or adapt the workflow into Codex, Claude Code, ChatGPT, Coze, or a future app wrapper.
+The pack serves users with varied goals: conceptual understanding, skill improvement, project delivery, exam preparation, creative expression, career growth, life practice, research exploration, strategy decisions, and identity growth. The immediate user of this repository is an agent builder who wants to install or adapt the workflow into Codex, Claude Code, Coze, Dify-style workflows, or another host Agent platform.
 
 ## Scope
 
@@ -15,7 +15,7 @@ This version includes:
 - A main orchestrator prompt.
 - Eight reusable skills for the goal-support loop.
 - Four state schemas.
-- Ten scenario-based dialogue tests, one per goal category.
+- Scenario-based dialogue tests covering the main goal categories.
 - A scoring rubric for dialogue quality.
 - A structural validation script.
 - A self-test report with findings and follow-up fixes.
@@ -28,6 +28,8 @@ This version does not include:
 - Real user accounts or cloud storage.
 - A live resource crawler.
 - A proprietary model integration layer.
+- A self-hosted model stack.
+- A custom agent runtime or orchestration framework.
 - Fully automated LLM transcript evaluation.
 
 ## Product Loop
@@ -56,9 +58,9 @@ The testing approach combines structural validation and scenario review:
 - The main agent clearly routes to all required skills.
 - The pack covers at least ten goal categories.
 - Each scenario defines user profile, initial input, expected skill chain, acceptance focus, and failure signals.
-- Visual rendering requires text-first confirmation and includes GPT-image-2 output guidance.
+- Visual rendering requires text-first confirmation and uses host-platform image-generation tools when available.
 - The validation script exits successfully after implementation.
-- The transcript harness generates ten scenario transcripts, a manifest, and a report.
+- The transcript harness generates scenario transcripts, a manifest, and a report.
 - A self-test report documents scenario-level evaluation and fixes.
 
 ## Verification Method

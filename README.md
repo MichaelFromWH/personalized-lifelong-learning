@@ -29,16 +29,15 @@ The core upgrade is simple but important: the agent should locate the user's cur
 - reviewing progress and adjusting the route
 - updating user state memory
 
-## Product Forms
+## Current Delivery Mode
 
-Life Vision Board has two product forms that share the same OS:
+Lifelong Growth OS currently ships as an Agent platform plugin / Skill / Agent Pack.
 
-- Agent platform plugin: package the workflow into Codex, Claude Code, Coze, Dify-style workflows, and custom agent runtimes.
-- Standalone Web/App product: turn the same workflow into a persistent Life Portfolio Dashboard with goals, milestones, evidence, reviews, and reminders.
+The repository is intentionally focused on reusable instructions, workflow protocols, schemas, tests, and installable Skill assets. The host Agent platform provides chat UI, model routing, tools, accounts, permissions, storage, and deployment.
 
-The shared kernel is the orchestrator, phase skills, schemas, rubrics, and future adapter layer. See [docs/product-forms-and-integration-strategy.md](docs/product-forms-and-integration-strategy.md).
+Current target hosts include Codex Skills, Claude Code project instructions or skill-like packages, Coze bots/workflows, and Dify-style workflow agents.
 
-The standalone Web/App execution plan is tracked in [docs/standalone-web-app-goal-plan-2026-06.md](docs/standalone-web-app-goal-plan-2026-06.md).
+See [docs/agent-platform-skill-strategy.md](docs/agent-platform-skill-strategy.md).
 
 ## Project Structure
 
@@ -100,7 +99,7 @@ See [INSTALL.md](INSTALL.md) for more options.
 
 ## Use With Generic Agents
 
-For Claude Code, ChatGPT, Coze, Dify-style workflows, or other Agent runtimes:
+For Agent platforms that support project instructions, skills, workflow bots, or knowledge files:
 
 1. Load [AGENT.md](AGENT.md) as the system or developer instruction.
 2. Expose the phase files in [skills](skills) as callable workflow references.
@@ -121,7 +120,7 @@ Run transcript harness:
 powershell -ExecutionPolicy Bypass -File .\tests\test-transcript-harness.ps1
 ```
 
-Run standalone Codex Skill validation:
+Run Codex Skill validation:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\skills\life-vision-board\scripts\validate-skill.ps1
@@ -137,7 +136,7 @@ The transcript harness generates:
 
 Current version: `0.2.0`
 
-This is an early Agent Pack. It already includes a complete workflow, schemas, tests, and a Codex-installable skill. The current architecture upgrade adds life-level growth profiles, multi-goal portfolios, and daily/weekly/monthly reflection logs. The next major upgrade is a real model transcript runner that calls OpenAI / Claude / Coze adapters instead of deterministic local transcripts.
+This is an early Agent Pack. It already includes a complete workflow, schemas, tests, and a Codex-installable skill. The current architecture upgrade adds life-level growth profiles, multi-goal portfolios, and daily/weekly/monthly reflection logs. The next major upgrade is better Agent-platform packaging and real user scenario evaluation inside host platforms.
 
 ## License
 

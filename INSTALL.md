@@ -1,9 +1,9 @@
 # Install 终身成长OS / Lifelong Growth OS
 
-终身成长OS can be used in two ways:
+终身成长OS is currently packaged for Agent platforms:
 
 - As a Codex Skill via `skills/life-vision-board`.
-- As a Generic Agent Pack by loading `AGENT.md` and related references into any agent runtime.
+- As a Generic Agent Pack by loading `AGENT.md` and related references into host platforms that support instructions, skills, workflow bots, or knowledge files.
 
 ## Install As A Codex Skill
 
@@ -62,7 +62,7 @@ The copied folder must contain:
 
 ## Use As A Generic Agent Pack
 
-For Claude, ChatGPT, Coze, Dify-style workflows, custom agents, or open-source model wrappers:
+For Agent platforms such as Claude Code, Coze, Dify-style workflows, or ChatGPT Projects:
 
 1. Use `AGENT.md` as the main system/developer instruction.
 2. Treat files in `skills/*.md` as workflow modules.
