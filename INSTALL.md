@@ -10,16 +10,16 @@
 ### Option 1: Clone Then Install Locally
 
 ```powershell
-git clone https://github.com/MichaelFromWH/personalized-lifelong-learning.git
-cd personalized-lifelong-learning
+git clone https://github.com/MichaelFromWH/lifelong-growth-os.git
+cd lifelong-growth-os
 powershell -ExecutionPolicy Bypass -File .\scripts\install-codex-skill.ps1
 ```
 
 On macOS/Linux:
 
 ```bash
-git clone https://github.com/MichaelFromWH/personalized-lifelong-learning.git
-cd personalized-lifelong-learning
+git clone https://github.com/MichaelFromWH/lifelong-growth-os.git
+cd lifelong-growth-os
 bash ./scripts/install-codex-skill.sh
 ```
 
@@ -36,13 +36,13 @@ skills/life-vision-board
 Example:
 
 ```bash
-install-skill-from-github --repo MichaelFromWH/personalized-lifelong-learning --path skills/life-vision-board
+install-skill-from-github --repo MichaelFromWH/lifelong-growth-os --path skills/life-vision-board
 ```
 
 If your installer supports URLs:
 
 ```bash
-install-skill-from-github --url https://github.com/MichaelFromWH/personalized-lifelong-learning/tree/main/skills/life-vision-board
+install-skill-from-github --url https://github.com/MichaelFromWH/lifelong-growth-os/tree/main/skills/life-vision-board
 ```
 
 ## Install Into A Custom Skill Library

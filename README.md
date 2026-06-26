@@ -4,7 +4,7 @@
 
 Product direction: **Lifelong Growth OS**. The repository keeps the `life-vision-board` package name for compatibility, while the architecture is expanding toward long-term, multi-goal growth support.
 
-It replaces the earlier Personalized Lifelong Learning skill with a broader goal-support workflow:
+It replaces the earlier learning-focused skill with a broader goal-support workflow:
 
 ```text
 vision or idea -> clarify the real goal -> locate current position
@@ -93,7 +93,7 @@ skills/life-vision-board
 Example:
 
 ```bash
-install-skill-from-github --repo MichaelFromWH/personalized-lifelong-learning --path skills/life-vision-board
+install-skill-from-github --repo MichaelFromWH/lifelong-growth-os --path skills/life-vision-board
 ```
 
 See [INSTALL.md](INSTALL.md) for more options.
